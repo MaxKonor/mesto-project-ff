@@ -1,5 +1,5 @@
 # Проектная работа Mesto
 
-5 спринт: Основы JavaScript, базовые типы, работа с DOM
+6 спринт: Проектная работа «Mesto. Сборка, модульность и модальные окна»
 
 https://github.com/MaxKonor/mesto-project-ff
