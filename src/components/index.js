@@ -1,7 +1,7 @@
-import "./pages/index.css";
-import { initialCards } from "./components/cards.js";
-import { createCard, deleteCard, likeCard } from "./components/card.js";
-import { openModal, closeModal } from "./components/modal.js";
+import "../pages/index.css";
+import { initialCards } from "./cards.js";
+import { createCard, deleteCard, likeCard } from "./card.js";
+import { openModal, closeModal } from "./modal.js";
 
 const placesList = document.querySelector(".places__list");
 const profileEditButton = document.querySelector(".profile__edit-button");
@@ -65,7 +65,7 @@ formNewPlace.addEventListener("submit", handlePlaceSubmit);
 function openModalImage(event) {
   popupImageCaption.textContent =
     event.target.closest(".places__item").textContent;
-  popupImagePicture.alt = event.target.textContent;
+  popupImagePicture.alt = event.target.closest(".places__item").textContent;
   popupImagePicture.src = event.target.src;
 
   openModal(popupTypeImage);
