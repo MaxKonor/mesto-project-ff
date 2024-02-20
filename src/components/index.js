@@ -63,9 +63,10 @@ function handlePlaceSubmit(event) {
 formNewPlace.addEventListener("submit", handlePlaceSubmit);
 
 function openModalImage(event) {
-  popupImageCaption.textContent =
+  const descriptionModalImage =
     event.target.closest(".places__item").textContent;
-  popupImagePicture.alt = event.target.closest(".places__item").textContent;
+  popupImageCaption.textContent = descriptionModalImage;
+  popupImagePicture.alt = descriptionModalImage;
   popupImagePicture.src = event.target.src;
 
   openModal(popupTypeImage);
