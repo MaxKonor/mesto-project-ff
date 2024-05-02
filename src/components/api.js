@@ -6,7 +6,6 @@ export {
   putLike,
   deleteLike,
   uploadAvatar,
-  renderLoading,
 };
 
 const config = {
@@ -91,12 +90,4 @@ const deleteLike = async (cardId) => {
     method: "DELETE",
     headers: config.headers,
   }).then((res) => getResponse(res));
-};
-
-const renderLoading = (isLoading, buttonSubmit) => {
-  if (isLoading) {
-    buttonSubmit.textContent = "Сохранение...";
-  } else {
-    buttonSubmit.textContent = "Сохранить";
-  }
 };

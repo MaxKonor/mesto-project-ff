@@ -7,7 +7,6 @@ import {
   updateProfile,
   uploadCard,
   uploadAvatar,
-  renderLoading,
 } from "./api.js";
 
 const placesList = document.querySelector(".places__list");
@@ -38,6 +37,14 @@ function openModalImage(item) {
   popupImagePicture.alt = item.name;
   popupImageCaption.textContent = item.name;
   openModal(popupTypeImage);
+}
+
+function renderLoading(isLoading, buttonSubmit) {
+  if (isLoading) {
+    buttonSubmit.textContent = "Сохранение...";
+  } else {
+    buttonSubmit.textContent = "Сохранить";
+  }
 }
 
 function addCard(item, userId, place = "end") {
