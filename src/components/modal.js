@@ -1,4 +1,4 @@
-export { openModal, closeModal };
+export { openModal, closeModal, closeModalByOverlay };
 
 function openModal(popup) {
   popup.classList.add("popup_is-opened");

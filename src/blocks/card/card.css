@@ -6,10 +6,25 @@
 @import url('./__title/card__title.css');
 
 .card {
-  font-family: 'Inter', Arial, sans-serif;
+  position: relative;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  position: relative;
   overflow: hidden;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.card__like-box {
+  width: 22px;
+  height: 35px;
+}
+
+.card__like-counter {
+  margin: 0;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 13px;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
 }
